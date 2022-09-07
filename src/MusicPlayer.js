@@ -23,33 +23,39 @@ const MusicPlayer = ()=>{
 
     const songData = [
         {
-            "title": "Kanye West - Through The Wire",
+            "title": " Through The Wire",
+            "artist":"Kanye West",
             "url": KanyeSong,
             "art":Kanye
         },
         {
-            "title": "Outkast - Ms Jackson",
+            "title": "Ms Jackson",
+            "artist": "Outkast",
             "url": MsJacksonSong,
             "art": MsJackson
         },
         {
-            "title": "cloud9 - cloud 9",
+            "title": "cloud 9",
+            "artist":"cloud9",
             "url": Cloud9Song ,
             "art":cloud9
         },
         {
-            "title": "Seaside - Seaside",
+            "title": "Seaside",
+            "artist":"Seaside",
             "url": SeasideSong,
             "art": Seaside
         }
         ,
         {
-            "title": "Kali Uchis - Telepatia",
+            "title": "Telepatia",
+            "artist":"Kali Uchis",
             "url": TelepatiaSong ,
             "art": Telepatia
         },
         {
-            "title": "Afu Ra - Whirlwind",
+            "title": "Whirlwind",
+            "artist":"Afu Ra",
             "url": WhirlwindSong ,
             "art": Whirlwind
         }

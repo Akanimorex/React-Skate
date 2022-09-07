@@ -6823,19 +6823,44 @@ a {
   height: 75px;
   margin: -4px auto;
   transition: 0.3s;
+  width: 129px;
+
 }
+
 #app-cover.expand{
   width: 335px;
 }
-#app-cover.compress{
-  width: 129px;
-}
+
+/* #app-cover.compress{
+} */
+
 #app-cover.compress #album-art{
   margin-left: 10px;
 }
+
 #app-cover.compress #player-track, #app-cover.compress #control-previous, #app-cover.compress #control-next{
-  display: none;
+  display: none !important;
 }
+
+/* .song-details {
+  text-align: left;
+  width: 60%;
+} */
+
+/* #control-previous.expand , #control-next.expand {
+  display: block !important;
+  transition-delay: 3s !important;
+} */
+
+/* #album-name.expand {
+  display: block !important;
+} */
+
+/* #player-track.expand {
+  display: block ;
+} */
+
+
 .pen-4{
   padding-right: 35px !important;
 }
@@ -6848,7 +6873,7 @@ a {
 #player-track {
   text-align: left;
   width: 60%;
-  display: none;
+  /* display: none !important; */
 }
 
 #album-name {
@@ -6856,6 +6881,7 @@ a {
    /* #fff; */
   font-size: 16px;
   font-weight: bold;
+  display: none ;
   /* margin-top: 10px; */
 }
 
@@ -7075,6 +7101,8 @@ a {
   display: flex;
   justify-content: flex-end;
   position: relative;
+  top: 10%;
+  right: 3%;
 }
 
 .control {
@@ -7111,6 +7139,7 @@ a {
 .button:hover i {
   color: #fff;
 }
+
 #compress_expand{
   font-size: 12px;
   position: absolute;
@@ -7786,9 +7815,12 @@ a {
     display: none;
   }
 
-  #track-name {
-    display: none;
+  #player-track {
+    display: none !important;
   }
+  /* #track-name {
+    display: none;
+  } */
  
   .sktbds-menusociallink {
     width: 36px;

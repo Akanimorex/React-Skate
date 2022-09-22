@@ -16,19 +16,25 @@ const Player =({audioElem, isplaying, setisplaying, currentSong, setCurrentSong,
 
     const compressExpandPlayer =()=>{
         if (playerWidthRef.current.classList.contains('compress')){
-            playerWidthRef.current.classList.remove('compress');
             playerWidthRef.current.classList.add('expand');
-            // compressExpandButtonRef.current.classList.remove('fa-plus');
-            // compressExpandButtonRef.current.classList.add('fa-minus');
+            compressExpandButtonRef.current.classList.remove('fa-plus');
+            compressExpandButtonRef.current.classList.add('fa-minus');
             setTimeout(() => {
-                console.log('timer worked')
-                // playerTrackRef.current.classList.add('expand');
-                // prevPlayerRef.current.classList.add('expand');
-                // nextPlayerRef.current.classList.add('expand');
+                //timer makes the other details pop up later 
+                console.log('timer worked');
+                playerWidthRef.current.classList.remove('compress');
+                playerTrackRef.current.classList.add('expand');
+                prevPlayerRef.current.classList.add('expand');
+                nextPlayerRef.current.classList.add('expand');
                 // $('#control-previous').css({'display': 'block'})
                 // $('#control-next').css({'display': 'block'})
                 // $('#control-play-pause').removeClass('pen-4')
-            }, 1000)
+            }, 200)
+        } else {
+            playerWidthRef.current.classList.add('compress');
+            playerWidthRef.current.classList.remove('expand');
+            compressExpandButtonRef.current.classList.remove('fa-minus');
+            compressExpandButtonRef.current.classList.add('fa-plus');
 
 
         }
@@ -37,7 +43,7 @@ const Player =({audioElem, isplaying, setisplaying, currentSong, setCurrentSong,
         // albumNameRef.current.classList.toggle('expand');
         // trackNameRef.current.classList.toggle('expand');
         // playerTrackRef.current.classList.toggle('expand');
-    }
+    };
 
     const PlayPause = ()=>
     {
@@ -105,10 +111,10 @@ const Player =({audioElem, isplaying, setisplaying, currentSong, setCurrentSong,
                     </div>
                     <div id='player-controls'>
                         <div id='player-track'  ref={playerTrackRef}>
-                            <div className="title">
+                            <div className="" id='album-name'>
                                 {currentSong.title}
                             </div>
-                            <div className=''  >
+                            <div className='' id='track-name'>
                                 {currentSong.artist}
                             </div>
                         </div>

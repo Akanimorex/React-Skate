@@ -153,12 +153,12 @@ function App() {
                          <div id="track-time">
                             <div id="current-time"></div>
                             <div id="track-length"></div>
-                            </div>
-                            <div id="s-area">
+                            
+                            <div id="s-area"></div>
                             <div id="ins-time"></div>
                             <div id="s-hover"></div>
                             <div id="seek-bar"></div>
-                            </div>
+                        </div>
                         
                     </div>
                     <div className="control" id="control-previous">

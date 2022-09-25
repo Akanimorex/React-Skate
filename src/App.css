@@ -6817,7 +6817,7 @@ a {
 
 
 #app-cover {
-  position: absolute;
+  position: fixed;
   bottom: 50px;
   left: 50px;
   height: 75px;
@@ -7106,6 +7106,11 @@ a {
   right: 3%;
 }
 
+#player-controls i {
+  padding: 10px;
+  font-size: 15px;
+}
+
 .control {
   width: 13.333%;
   float: left;
@@ -7145,7 +7150,7 @@ a {
   font-size: 12px;
   position: absolute;
   top: -13px;
-  right: -13px;
+  right: -17px;
   /* color: #fff; */
   color: #46474a;
   /* background-color: rgb(73, 73, 73); */

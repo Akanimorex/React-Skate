@@ -85,7 +85,7 @@ const MusicPlayer = ()=>{
 
 
     return(
-       <div className='App' style={{backgroundColor:'black',height:'100vh'}}>
+       <div className='App' style={{}}>
             <audio src={currentSong.url} ref={audioElem} onTimeUpdate={onPlaying} />
             <Player songs={songs} setSongs={setSongs} isplaying={isplaying} setisplaying={setisplaying} audioElem={audioElem} currentSong={currentSong} setCurrentSong={setCurrentSong} />
        </div>

@@ -2,13 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import MusicPlayer from './MusicPlayer';
+import Mission from './Mission';
+import Skatepark from './Skatepark';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <MusicPlayer />
+    <Skatepark/>
   </React.StrictMode>
 );
 

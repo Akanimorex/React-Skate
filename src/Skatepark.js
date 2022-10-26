@@ -1,3 +1,4 @@
+import React  from 'react';
 import './App.css';
 import parkDay from './images/park-day.png';
 import parkNight from './images/park-night.png';

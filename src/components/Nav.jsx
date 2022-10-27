@@ -1,7 +1,7 @@
 import React from 'react';
-import './App.css';
-import logo from './images/pfp_transparent.png';
-import navBoard from './images/skateboard_rdy.png';
+import '../App.css';
+import logo from '../images/pfp_transparent.png';
+import navBoard from '../images/skateboard_rdy.png';
 import { BrowserRouter, Link } from "react-router-dom";
 
 
@@ -10,10 +10,10 @@ const Nav =()=> {
     
         <div data-animation="over-right" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" data-no-scroll="1" role="banner" className="sktbds-navbar w-nav">
             <div className="nav-container w-container">
-            <a href="index.html" aria-current="page" className="brand w-nav-brand w--current">
+            <Link to="/" className="brand w-nav-brand w--current">
                 {/* skaterbirds logo for the desktop view  */}
                 <img src={logo} loading="eager" width="75" alt="logo" className="image-16" />
-            </a>
+            </Link>
             <div className="spacer"></div>
             <div className="menu-button w-nav-button">
                 <div className="w-embed">
@@ -37,11 +37,10 @@ const Nav =()=> {
                 </div>
             </div>
             <nav role="navigation" className="nav-menu w-nav-menu">
-                <div className="div-block-29">
-                    <a href="index.html" aria-current="page" className="brand w-nav-brand w--current">
-                         {/* skaterbirds logo for the mobile nav  */}
+                <div className="div-block-29" >
+                    <Link to="/" className="brand w-nav-brand w--current">
                         <img src={logo} loading="lazy" width="75" alt="logo" className="image-16" />
-                    </a>
+                    </Link>        
                     <div className="spacer"></div>
                     <div className="menu-button w-nav-button">
                         <div className="html-embed-2 w-embed">

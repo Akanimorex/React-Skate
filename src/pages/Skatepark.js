@@ -1,14 +1,14 @@
 import React  from 'react';
-import './App.css';
-import parkDay from './images/park-day.png';
-import parkNight from './images/park-night.png';
-import cly from './images/Clyy.png';
-import byme from './images/BYME.png';
-import zeon from './images/zeon.png';
+import '../App.css';
+import parkDay from '../images/park-day.png';
+import parkNight from '../images/park-night.png';
+import cly from '../images/Clyy.png';
+import byme from '../images/BYME.png';
+import zeon from '../images/zeon.png';
 
-import Nav from './Nav';
-import Footer from './Footer';
-import MusicPlayer from './MusicPlayer';
+import Nav from '../components/Nav';
+import Footer from '../components/Footer';
+import MusicPlayer from '../MusicPlayer';
 
 const Skatepark =()=> { 
 

@@ -1,8 +1,8 @@
 import React  from 'react';
-import './App.css';
-import roadmapImage from './images/roadmap-image.png';
-import Nav from './Nav';
-import MusicPlayer from './MusicPlayer';
+import '../App.css';
+import roadmapImage from '../images/roadmap-image.png';
+import Nav from '../components/Nav';
+import MusicPlayer from '../MusicPlayer';
 
 const Roadmap = () => {
     return (

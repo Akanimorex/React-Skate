@@ -1,6 +1,6 @@
 import React  from 'react';
 import MusicPlayer from './MusicPlayer';
-import Nav from './Nav';
+import Nav from './components/Nav';
 
 
 

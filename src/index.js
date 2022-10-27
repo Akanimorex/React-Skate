@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App'
 import reportWebVitals from './reportWebVitals';
-import Roadmap from './Roadmap';
-import Mission from './Mission';
-import Skatepark from './Skatepark';
+import Roadmap from './pages/Roadmap';
+import Mission from './pages/Mission';
+import Skatepark from './pages/Skatepark';
 import { 
         BrowserRouter,
         Route,

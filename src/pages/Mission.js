@@ -1,8 +1,8 @@
 import React from 'react';
-import './App.css';
-import Nav from './Nav';
-import Footer from './Footer';
-import MusicPlayer from './MusicPlayer';
+import '../App.css';
+import Nav from '../components/Nav';
+import Footer from '../components/Footer';
+import MusicPlayer from '../MusicPlayer';
 
 
 const Mission = () => {

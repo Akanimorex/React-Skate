@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import Roadmap from './pages/Roadmap';
 import Mission from './pages/Mission';
 import Skatepark from './pages/Skatepark';
+import Cafe from './pages/Cafe';
 import { 
         BrowserRouter,
         Route,
@@ -21,6 +22,7 @@ root.render(
       <Route path='Mission'  element={<Mission/>}/> 
       <Route path='Skatepark'  element={<Skatepark/>}/> 
       <Route path='Roadmap' element={<Roadmap/>}/> 
+      <Route path='Cafe' element={<Cafe/>}/> 
     </Routes>
   </BrowserRouter>
 );

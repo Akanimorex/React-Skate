@@ -36,19 +36,6 @@ const Mission = () => {
                                 <br />
                                 More info about our Roadmap <a href="https://medium.com/@SkaterBirds/skaterbirds-bring-the-90s-flow-back-e1e5a7238bf7">here.</a>
                             </div>
-                            {/* <a data-w-id="71e8789d-8156-f8b9-7a63-329019745bd7" href="park.html" className="sktbds-button w-inline-block">
-                                <div
-                                    style="
-                                        -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                        -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                        -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                        transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    "
-                                    className="sktbds-buttontext"
-                                >
-                                    BEAR WITH US →
-                                </div>
-                            </a> */}
                         </div>
                     </div>
                     <div className="manifesto-spacer"></div>

@@ -64,12 +64,9 @@ const Nav =()=> {
                     <Link to="/Skatepark" className="sktbds-nav-box">SKATEPARK</Link>
                     <Link to="/Mission" className="sktbds-nav-box">MISSION</Link>
                     <Link to="/Roadmap" className="sktbds-nav-box">ROADMAP</Link>
-                   
-                    <div className="div-flex">
-                        <a href="#" className="sktbds-nav-box disabled">CAFE</a>
-                        <div className="soon-div">SOON</div>
-                    </div>
-                    <a href="https://shopskaterbirds.com/" className="sktbds-nav-box">SHOP</a> <a href="https://www.buzzsprout.com/2027710" className="sktbds-nav-box">RADIO</a>
+                    <Link to="/Cafe" className="sktbds-nav-box">CAFE</Link>
+                    <a href="https://shopskaterbirds.com/" className="sktbds-nav-box">SHOP</a>
+                     <a href="https://www.buzzsprout.com/2027710" className="sktbds-nav-box">RADIO</a>
                 </div>
                 <div className="social-links">
                     <a href="https://twitter.com/SkaterBirdsNFT" target="_blank" className="sktbds-menusociallink w-inline-block">

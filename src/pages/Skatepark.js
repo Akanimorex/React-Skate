@@ -8,7 +8,6 @@ import zeon from '../images/zeon.png';
 
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
-import MusicPlayer from '../MusicPlayer';
 
 const Skatepark =()=> { 
 
@@ -147,7 +146,6 @@ const Skatepark =()=> {
                 </div>
             </div>
         </div>
-        <MusicPlayer/>
     </div>
     )
 

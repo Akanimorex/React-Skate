@@ -2,7 +2,6 @@ import React from 'react';
 import '../App.css';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
-import MusicPlayer from '../MusicPlayer';
 
 
 const Mission = () => {
@@ -42,7 +41,6 @@ const Mission = () => {
                 </div>
             </div>       
             <Footer/>
-            <MusicPlayer/>
           </div>
           
     )

@@ -7,6 +7,7 @@ import Roadmap from './pages/Roadmap';
 import Mission from './pages/Mission';
 import Skatepark from './pages/Skatepark';
 import Cafe from './pages/Cafe';
+import MusicPlayer from './MusicPlayer';
 import { 
         BrowserRouter,
         Route,
@@ -16,15 +17,18 @@ from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path='/' index element={<App/>}/> 
-      <Route path='Mission'  element={<Mission/>}/> 
-      <Route path='Skatepark'  element={<Skatepark/>}/> 
-      <Route path='Roadmap' element={<Roadmap/>}/> 
-      <Route path='Cafe' element={<Cafe/>}/> 
-    </Routes>
-  </BrowserRouter>
+  <>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' index element={<App/>}/> 
+        <Route path='Mission'  element={<Mission/>}/> 
+        <Route path='Skatepark'  element={<Skatepark/>}/> 
+        <Route path='Roadmap' element={<Roadmap/>}/> 
+        <Route path='Cafe' element={<Cafe/>}/> 
+      </Routes>
+    </BrowserRouter>
+    <MusicPlayer/>
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function

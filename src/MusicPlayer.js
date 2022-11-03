@@ -80,13 +80,46 @@ const MusicPlayer = ()=>{
     
         setCurrentSong({ ...currentSong, "progress": ct / duration * 100, "length": duration })
     
+    };
+
+    //audioelem
+
+    const skipBack = ()=>
+    {
+        const index = songs.findIndex(x=>x.title == currentSong.title);
+        if (index == 0)
+        {
+        setCurrentSong(songs[songs.length - 1])
+        }
+        else
+        {
+        setCurrentSong(songs[index - 1])
+        }
+        audioElem.current.currentTime = 0;
+        
+    };
+
+    const skiptoNext = ()=>
+    {
+        const index = songs.findIndex(x=>x.title == currentSong.title);
+
+        if (index == songs.length-1)
+        {
+        setCurrentSong(songs[0])
+        }
+        else
+        {
+        setCurrentSong(songs[index + 1])
+        }
+        audioElem.current.currentTime = 0;
+        
     }
 
 
     return(
        <div className='App' style={{}}>
-            <audio src={currentSong.url} ref={audioElem} onTimeUpdate={onPlaying} />
-            <Player songs={songs} setSongs={setSongs} isplaying={isplaying} setisplaying={setisplaying} audioElem={audioElem} currentSong={currentSong} setCurrentSong={setCurrentSong} />
+            <audio src={currentSong.url} onEnded={()=>skiptoNext} ref={audioElem} onTimeUpdate={onPlaying} />
+            <Player songs={songs} setSongs={setSongs} isplaying={isplaying} setisplaying={setisplaying} audioElem={audioElem} skipBack={skipBack} skipNext={skiptoNext} currentSong={currentSong} setCurrentSong={setCurrentSong} />
        </div>
     )
 };

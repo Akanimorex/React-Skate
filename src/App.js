@@ -1,5 +1,4 @@
 import React  from 'react';
-import MusicPlayer from './MusicPlayer';
 import Nav from './components/Nav';
 
 
@@ -15,7 +14,6 @@ function App() {
     <div className="sktbds-body homepage-skate">
         <Nav/>
         <div className="homepage"></div>
-        <MusicPlayer/>
     </div>
   );
 }

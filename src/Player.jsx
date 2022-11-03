@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import './App.css';
 
 
-const Player =({audioElem, isplaying, setisplaying, currentSong, setCurrentSong, songs})=>{
+const Player =({audioElem, isplaying, setisplaying, currentSong, setCurrentSong, songs, skipBack, skipNext})=>{
 
     const clickRef = useRef();
     const artRef = useRef();
@@ -61,36 +61,36 @@ const Player =({audioElem, isplaying, setisplaying, currentSong, setCurrentSong,
 
     }
 
-    const skipBack = ()=>
-    {
-        const index = songs.findIndex(x=>x.title == currentSong.title);
-        if (index == 0)
-        {
-        setCurrentSong(songs[songs.length - 1])
-        }
-        else
-        {
-        setCurrentSong(songs[index - 1])
-        }
-        audioElem.current.currentTime = 0;
+    // const skipBack = ()=>
+    // {
+    //     const index = songs.findIndex(x=>x.title == currentSong.title);
+    //     if (index == 0)
+    //     {
+    //     setCurrentSong(songs[songs.length - 1])
+    //     }
+    //     else
+    //     {
+    //     setCurrentSong(songs[index - 1])
+    //     }
+    //     audioElem.current.currentTime = 0;
         
-    }
+    // }
 
-    const skiptoNext = ()=>
-    {
-        const index = songs.findIndex(x=>x.title == currentSong.title);
+    // const skiptoNext = ()=>
+    // {
+    //     const index = songs.findIndex(x=>x.title == currentSong.title);
 
-        if (index == songs.length-1)
-        {
-        setCurrentSong(songs[0])
-        }
-        else
-        {
-        setCurrentSong(songs[index + 1])
-        }
-        audioElem.current.currentTime = 0;
+    //     if (index == songs.length-1)
+    //     {
+    //     setCurrentSong(songs[0])
+    //     }
+    //     else
+    //     {
+    //     setCurrentSong(songs[index + 1])
+    //     }
+    //     audioElem.current.currentTime = 0;
         
-    }
+    // }
 
     return (
 
@@ -119,9 +119,9 @@ const Player =({audioElem, isplaying, setisplaying, currentSong, setCurrentSong,
                             </div>
                         </div>
                         <div className="controls" id='player-controls'>
-                            <i className='fas fa-backward btn_action control' onClick={skipBack}  id='control-previous' ref={prevPlayerRef}/>
+                            <i className='fas fa-backward btn_action control' onClick={()=>skipBack()}  id='control-previous' ref={prevPlayerRef}/>
                             {isplaying ? <i className='fas fa-pause btn_action pp control' onClick={PlayPause} id="play-pause-button" /> : <i className='fas fa-play btn_action pp control' onClick={PlayPause} i/>}
-                            <i className='fas fa-forward btn_action control' onClick={skiptoNext} id='control-next' ref={nextPlayerRef}/>        
+                            <i className='fas fa-forward btn_action control' onClick={()=>skipNext()} id='control-next' ref={nextPlayerRef}/>        
                         </div>
                         <i className='fa fa-plus' id='compress_expand' onClick={compressExpandPlayer} ref={compressExpandButtonRef}></i>
                     </div>

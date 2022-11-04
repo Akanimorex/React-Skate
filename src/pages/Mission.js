@@ -8,7 +8,7 @@ const Mission = () => {
     return (
           <div className='sktbds-body'>
             <Nav/>
-            <div class="sktbds-manifesto-okhand"></div>
+            <div className="sktbds-manifesto-okhand"></div>
             <div className="sktbds-section zero-padding-bottom wf-section">
                 <div className="sktbds-container p-0">
                     <div className="w-layout-grid grid">

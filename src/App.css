@@ -6981,12 +6981,14 @@ a {
   position: relative;
   height: 87%;
   /* background-color: rgb(73, 73, 73); */
-  background-color: rgba(255, 249, 240, 0.5);
+  background-color: rgba(255, 249, 240, 0.9);
   /* box-shadow: 0 30px 80px #656565; */
   border-radius: 5px;
   /* border-top-right-radius: 30px; */
   z-index: 2;
   font-family:'Asap', sans-serif;
+  box-shadow:  0 20px 30px -10px #afb7c1;
+
 
 }
 

@@ -12,7 +12,7 @@ import Footer from '../components/Footer';
 const Skatepark =()=> { 
 
     return (
-        <div classNameName='sktbds-body'>
+        <div className='sktbds-body'>
             <Nav/>
              <div className="sktbds-section top wf-section">
             <div className="sktbds-container park-team">
@@ -139,10 +139,10 @@ const Skatepark =()=> {
                 </div>
             </div>
         </div>
-        <div class="sktbds-footer wf-section">
-            <div class="sktbds-container">
+        <div className="sktbds-footer wf-section">
+            <div className="sktbds-container">
                 <div>
-                    <div class="sktbds-smalltext">© 2022, Skaterbirds<br /></div>
+                    <div className="sktbds-smalltext">© 2022, Skaterbirds<br /></div>
                 </div>
             </div>
         </div>
